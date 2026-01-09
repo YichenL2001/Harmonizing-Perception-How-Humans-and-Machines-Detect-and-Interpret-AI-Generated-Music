@@ -11,14 +11,6 @@ import torch.nn.functional as F
 import torchaudio
 from torch.utils.data import Dataset
 
-
-warnings.filterwarnings(
-    "ignore",
-    message="In 2.9, this function's implementation will be changed to use torchaudio.load_with_torchcodec",
-    category=UserWarning,
-    module="torchaudio._backend.utils",
-)
-
 TARGET_SAMPLE_RATE = 48000
 MIN_FBANK_SAMPLES = 1200
 
